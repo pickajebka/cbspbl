@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Logs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            margin: auto;
+            width: 70%;
+            overflow: auto;
+        }
+        .count {
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: #e3e3e3;
+            padding: 1em;
+            text-align: center;
+        }
+        .log-entry {
+          display: flex;
+          justify-content: space-around; /* Updated from space-between to space-around for equal spacing */
+          background: #ffffff;
+          margin-bottom: 1px;
+          padding: 0.5em 1em;
+          border: 1px solid #ddd;
+        }
+        .human {
+            color: green;
+        }
+        .bot {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Total Visitors: 1</div>
+    </header>
+    <div class='container'>
+        <div class='count'>Humans: 1</div>
+        <div class='count'>Bots: 0</div>
+        <div class='log-entry'>
+                  <span class='timestamp'>Timestamp</span>
+                  <span class='ip'>IP</span>
+                  <span class='isp'>ISP</span>
+                  <span class='type Type'>Type</span>
+                  <span class='country'>Country</span>
+                </div><div class='log-entry'>
+                  <span class='timestamp'>2025-06-05 13:53:14</span>
+                  <span class='ip'>127.0.0.1</span>
+                  <span class='isp'>Unknown</span>
+                  <span class='type human'>human</span>
+                  <span class='country'>Unknown</span>
+                </div>
+    </div>
+</body>
+</html>
